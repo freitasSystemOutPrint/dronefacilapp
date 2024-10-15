@@ -1,0 +1,83 @@
+/* Estilos para o Painel Administrativo - Drone Fácil */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px; /* Define uma largura máxima para o container */
+    margin: 20px auto; /* Centraliza o container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Fundo branco para o container */
+}
+
+h1 {
+    text-align: center;
+    color: #218838; /* Cor laranja */
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os links */
+}
+
+.link {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    padding: 15px;
+    background-color: #45a55b; /* Cor de fundo dos links */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link:hover {
+    background-color: #218838; /* Cor ao passar o mouse */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre bordas das células */
+    margin-top: 20px; /* Espaçamento acima da tabela */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borda da tabela */
+    padding: 10px; /* Espaçamento interno das células */
+    text-align: left; /* Alinhamento à esquerda do texto */
+}
+
+th {
+    background-color: #218838; /* Cor de fundo para o cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo para linhas pares */
+}
+
+tr:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #218838; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto no rodapé */
+    position: relative; /* Para garantir que o rodapé fique no fim da página */
+    bottom: 0;
+    width: 100%; /* Ocupa toda a largura da página */
+}

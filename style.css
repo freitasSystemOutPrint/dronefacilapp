@@ -1,0 +1,199 @@
+/* Estilos globais */
+html, body {
+    height: 100%; /* Define a altura do HTML e do body como 100% */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex; /* Torna o body um contêiner flexível */
+    flex-direction: column; /* Organiza os filhos em uma coluna */
+}
+
+header {
+    background-color: #28a745;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif; /* Altera a fonte do h1 para Poppins */
+    margin: 0;
+    font-size: 2.5em; /* Aumenta o tamanho da fonte, se necessário */
+    font-weight: 700; /* Define a fonte como bold */
+    color: #d9efde; /* Cor do texto, se necessário */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante */
+    padding: 20px;
+    margin-bottom: 0; /* Remove a margem inferior */
+}
+
+.banners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.banner {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    padding: 15px;
+    background-color: #45a55b;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.banner:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #28a745; /* Verde principal */
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* Espaçamento interno do rodapé */
+    margin-top: 0; /* Remova espaço acima do rodapé */
+    position: relative; /* Para evitar sobreposição */
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Remove margens do parágrafo */
+    font-size: 0.9em; /* Tamanho da fonte do texto do rodapé */
+}
+
+/* Responsividade */
+@media (min-width: 600px) {
+    .banners {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .banner {
+        margin: 10px;
+    }
+}
+
+/* Estilo para a página de cadastro de drone */
+.main-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    min-height: 60vh; /* Aumenta a altura mínima para melhor visualização */
+    margin-bottom: 90px; /* Espaço entre o formulário e o rodapé */
+}
+
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Ajustes para responsividade */
+@media (min-width: 600px) {
+    form {
+        max-width: 500px;
+    }
+}
+
+/* Estilos para a seção "Por que escolher" */
+.why-choose {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Margem em cima e embaixo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.why-choose h2 {
+    font-size: 1.8em; /* Tamanho do título */
+    margin-bottom: 20px; /* Margem abaixo do título */
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os ícones */
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.feature {
+    flex: 1 1 200px; /* Flexível, com tamanho mínimo */
+    background-color: #f7f7f7; /* Fundo claro */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s; /* Transição ao passar o mouse */
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Efeito de hover */
+}
+
+.feature i {
+    font-size: 2em; /* Tamanho dos ícones */
+    color: #28a745; /* Cor dos ícones */
+    margin-bottom: 10px; /* Margem abaixo dos ícones */
+}
+
+.feature h3 {
+    font-size: 1.2em; /* Tamanho dos subtítulos */
+    margin: 10px 0; /* Margem acima e abaixo dos subtítulos */
+}
+
+.feature p {
+    font-size: 0.9em; /* Tamanho do texto */
+    color: #666; /* Cor do texto */
+}
